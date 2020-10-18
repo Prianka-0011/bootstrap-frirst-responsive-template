@@ -1,0 +1,357 @@
+/*common section css*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:boder-box;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.extra-design h2 ,.service-div h2 {
+  font-size: 0.9rem;
+  margin: 20px 0 15px;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+/*start header section css*/
+.header{
+  height:100vh;
+  width:100%;
+  background-image: linear-gradient(rgba(200, 200, 255, 0.3),rgba(200, 200, 255, 0.3)),url("/images/hader-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path: polygon(100% 0%,100% 75%,50% 100%,0 75%,0 0);
+  /*left=100 top=0,left=100 top=50,left=0top=75 ,left=0 top=0*/
+  position: relative;
+
+}
+.header::before{
+  content: "";
+  position: absolute;
+  top:0%;
+  bottom: 0%;
+  left:0;
+  right: 0;
+  opacity: .4;
+  z-index: -1;
+  background: linear-gradient(to right,#1e5799 0%,#D6361A 0%,#100F0F 100%)
+}
+.navbar::before{
+  content: "";
+  position: absolute;
+  top:0%;
+  bottom: 0%;
+  left:0;
+  right: 0;
+  opacity: .4;
+  z-index: -1;
+  background: linear-gradient(to right,#1e5799 0%,#D6361A 0%,#100F0F 100%)
+}
+.nav-item a{
+  color: #fff!important;
+  font-weight: bold;
+}
+.navbar-brand{
+  color: #fff!important;
+  font-weight: bold;
+}
+.header-section{
+width: 100%;
+height: inherit;
+color: white;
+text-align: center;
+position: relative;
+}
+
+.header-btn a{
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header-btn a:hover{
+color: #50d1c0;
+background: #fff;
+text-decoration: none;
+box-shadow: 0 0  20px 0 rgba(0, 0, 0, 0.3);
+}
+.center-div{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.center-div p{
+font-size: 1.3rem;
+padding: 10px 0 20px 0;
+color: #fff;
+}
+/*end header section css*/
+/*start extra-header section css*/
+.extra-header{
+width: 100%;
+height: auto;
+margin: 100px 0;
+text-align: center;
+}
+.extra-design{
+  background: #fff;
+  border: medium none;
+  padding: 50px!important;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.extra-design:hover{
+box-shadow: 0 0  20px 0 rgba(0, 0, 0, 0.3);
+transform: translateY(-20px);
+}
+/*end extra-header section css*/
+/*start offer section css*/
+.service-offer{
+background: #f7f7f9;
+padding:50px 0;
+margin-bottom: 50px;
+}
+.heading{
+  margin-bottom: 50px;
+}
+.heading h1{
+text-transform: uppercase;
+font-weight: 600;
+font-size: 1.5rem;
+}
+.names h1{
+  text-transform: uppercase;
+  color: #2e2e2e;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.service-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress{
+  height: 0.6rem!important;
+  margin-bottom: 25px!important;
+}
+i{
+  color: #FF4500!important;
+}
+/*end offer section css*/
+/*start project section css*/
+.project-section{
+  margin: 100px 0;
+}
+.project-section h1{
+  font-size: 2rem;
+  text-align: center;
+}
+/*end project section css*/
+/*start pricing section css*/
+.pricing-section{
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  position: relative;
+}
+.pricing-section::before{
+  content: "";
+  position: absolute;
+  top:0%;
+  bottom: 0%;
+  left:0;
+  right: 0;
+  opacity: .8;
+  z-index: -1;
+  background: linear-gradient(160deg,#FF4500 55%,#fff 0%)
+}
+.money{
+  font-size: 40px;
+  line-height: 1;
+  color: #606060;
+}
+.card{
+  transition: 0.4s ease;
+}
+.card-header{
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: #fff!important;
+  text-transform: uppercase;
+  padding: 25px 0!important;
+}
+.card-body{
+  padding: 30px 0px!important;
+}
+.card-body li{
+  margin: 10px 0;
+  font-weight: 400;
+  font-size:15px;
+  line-height:  1.6;
+  color: #606060;
+
+}
+.card-footer{
+  background: white!important;
+  padding: 30px 0px!important;
+}
+.card-footer a{
+  border: 1px solid rgb(255,99,71);
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #FF4500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.card-footer a:hover{
+color: #fff;
+background: rgb(255,99,71);
+text-decoration: none;
+box-shadow: 0 0  20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover{
+transform: translateY(-20px);
+box-shadow: 0 0  20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover .card-header ,.card:hover .money{
+color:  rgb(255,99,71);
+}
+.middle-top{
+  transform: translateY(-20px);
+  box-shadow: 0 0  20px 0 rgba(0, 0, 0, 0.3);
+}
+/*end pricing section css*/
+/* start happy client section */
+.happyclint-section{
+  width: 100%;
+  height: 100vh;
+  padding: 80PX 0;
+
+}
+.box{
+text-align: center;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-shadow: 0 5px  10px 0 rgba(0, 0, 0, 0.3);
+border-radius: 2px;
+transition: 0.3s ease
+}
+.box:hover{
+  background: rgb(255,99,71);
+}
+.box:hover p{
+  color:  white;
+}
+.box:hover{
+  background: rgb(255,99,71);
+}
+.carousel-indicators{
+  position: absolute;
+  right: 0;
+  bottom: -60px!important;
+}
+.carousel-indicators li{
+background-color: rgb(255,99,71)!important
+}
+.box a{
+position: relative;
+
+}
+.box a img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.box a::after{
+content: "\f10d";
+font-family: FontAwesome;
+height: 40px;
+width: 40px;
+border-radius:50%;
+background: linear-gradient(to right, #FF4500 0%,#FF8C00 0%,#FF4500 100%);
+color:white;
+position: absolute;
+top: 120%;
+left:70%;
+display: flex;;
+justify-content: center;
+align-items: center;
+}
+.box h1{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+.box h2{
+  font-size: 13px;
+  font-weight: 400px;
+  color: #666666;
+  margin-bottom: 50px;
+}
+.box:hover h1{
+
+  color: #fff;
+
+}
+.box:hover h2{
+
+  color: #fff;
+
+}
+/* end happy client section */
+/* start contact section */
+.contactus-section{
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0;
+  position: relative;
+}
+.contactus-section::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: .8;
+  background: linear-gradient(330deg, #FF4500 55%,#fff 0%)
+}
+.contactus-section .cnt-btn{
+  border: 1px solid rgb(255,99,71);
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #FF4500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: transparent;
+}
+.contactus-section .cnt-btn:hover{
+  background: #fff;
+  color: #FF4500;
+  box-shadow: 0 5px  10px 0 rgba(0, 0, 0, 0.3);
+}
+/* end contact section */
